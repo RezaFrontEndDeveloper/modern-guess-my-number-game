@@ -242,6 +242,17 @@ main > div {
   gap: 10px;
 }
 
+/* logic styles */
+
+.active_box {
+  background-color: red;
+}
+.active_box_ok {
+  background-color: green;
+}
+
+/* media queries */
+
 @media (max-width: 680px) {
   .bg_move_2 {
     width: 150px;
@@ -269,11 +280,29 @@ main > div {
     right: 220px;
   }
 }
-/*  */
+@media (max-width: 400px) {
+  main {
+    width: 300px;
+  }
+  .guide_boxes {
+    gap: 30px;
+  }
+  .guide_box_style {
+    border: none;
+    padding: 0;
+    border-radius: 0;
+  }
+  .main_guide::before {
+    width: 90px;
+  }
 
-.active_box {
-  background-color: red;
-}
-.active_box_ok {
-  background-color: green;
+  .main_guide::after {
+    width: 90px;
+  }
+  .bg_move_1 {
+    right: 10px;
+  }
+  .bg_move_2 {
+    right: 200px;
+  }
 }
