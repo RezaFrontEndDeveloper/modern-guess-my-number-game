@@ -71,4 +71,5 @@ resetBtn.addEventListener("click", function () {
   okBox.classList.remove("active_box_ok");
   upBox.classList.remove("active_box");
   downBox.classList.remove("active_box");
+  clientValue.value = "";
 });
