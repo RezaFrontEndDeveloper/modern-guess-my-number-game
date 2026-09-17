@@ -21,6 +21,14 @@ console.log(score);
 uiButton.addEventListener("click", function () {
   if (!clientValue.value) {
     status1.textContent = "یک مقدار وارد کنید ";
+    status1.style.color = "red";
+    return;
+  }
+
+  if (clientValue.value < 0 || clientValue.value > 10) {
+    status1.textContent = "عدد باید بین 0 و 10 باشد  ";
+    status1.style.color = "red";
+    return;
   }
 
   if (number > Number(clientValue.value)) {
@@ -59,6 +67,7 @@ resetBtn.addEventListener("click", function () {
   number = randomNumber();
   console.log("again", number);
   guessNumber.textContent = score;
+  status1.textContent = "";
   okBox.classList.remove("active_box_ok");
   upBox.classList.remove("active_box");
   downBox.classList.remove("active_box");
