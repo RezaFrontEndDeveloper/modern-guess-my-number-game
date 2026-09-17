@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ui boxes -->
+    <div class="bg_move_1"></div>
+    <div class="bg_move_2"></div>
+
+    <!-- header -->
+    <header>
+      <div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="70"
+          height="70"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#ff8040"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-lightbulb"
+        >
+          <path
+            d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"
+          />
+          <path d="M9 18h6" />
+          <path d="M10 22h4" />
+        </svg>
+      </div>
+      <h1>عدد من رو حدس بزن</h1>
+      <p>
+        من یک عدد از 1 تا 10 دارم ، سعی کن با کمترین تعداد حدس، عدد رو پیدا کنی
+      </p>
+    </header>
+
+    <!-- main -->
+    <main>
+      <div class="core_box">
+        <p>بیشترین رکوردشما : <span class="guess_record"></span></p>
+        <p class="form_title">
+          تعداد حدس های شما : <span class="guess_number">20</span>
+        </p>
+      </div>
+      <div>
+        <input class="input" type="number" placeholder="عدد خود را وارد کنید" />
+        <p class="status">یک مقدار را وارد کنید</p>
+      </div>
+      <button class="form_button btn">
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#ffffff"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-move-right"
+          >
+            <path d="M18 8L22 12L18 16" />
+            <path d="M2 12H22" />
+          </svg>
+        </span>
+        حدس بزن
+      </button>
+      <p class="main_guide">راهنما</p>
+
+      <div class="guide_boxes">
+        <div class="guide_box_up guide_box_style">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#ffffff"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-move-up"
+          >
+            <path d="M8 6L12 2L16 6" />
+            <path d="M12 2V22" />
+          </svg>
+          <span>بالاتر</span>
+        </div>
+        <div class="guide_box_ok guide_box_style">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#ffffff"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-check"
+          >
+            <path d="M20 6 9 17l-5-5" />
+          </svg>
+          <span>درسته</span>
+        </div>
+        <div class="guide_box_down guide_box_style">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#ffffff"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-move-down"
+          >
+            <path d="M8 18L12 22L16 18" />
+            <path d="M12 2V22" />
+          </svg>
+          <span>پایین تر </span>
+        </div>
+      </div>
+      <button class="btn btn_primary">بارگذاری مجدد</button>
+    </main>
+    <script src="./javascript.js"></script>
+  </body>
+</html>

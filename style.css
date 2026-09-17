@@ -1,0 +1,285 @@
+@font-face {
+  font-family: "peyda";
+  src: url("./fonts/Peyda-Bold.woff2") format(woff2);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "peyda";
+  src: url("./fonts/Peyda-Regular\ \(1\).woff2") format(woff2);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "peyda";
+  src: url("./fonts/Peyda-Medium.woff2") format(woff2);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "peyda";
+  src: url("./fonts/Peyda-Light.woff2") format(woff2);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "sans";
+  src: url("./fonts/IRANSansX-Bold.woff2") format(woff2);
+  font-weight: 700;
+}
+
+:root {
+  --color-0d1326: #0d1326;
+  --color-fff: #fff;
+  --color-border: #364268;
+  --color-button: #0b3ee3;
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  background-color: var(--color-0d1326);
+  font-family: "sans";
+  color: var(--color-fff);
+  overflow-x: hidden;
+}
+p {
+  font-family: "peyda";
+  font-weight: 100;
+}
+.bg_move_1 {
+  width: 260px;
+  height: 190px;
+  position: absolute;
+  top: 497px;
+  right: 400px;
+  background: rgb(59, 66, 255);
+  border-radius: 50%;
+}
+.bg_move_2 {
+  width: 210px;
+  height: 212px;
+  position: absolute;
+  top: 148px;
+  left: 442px;
+  background-color: red;
+  /* background: rgb(96, 108, 195); */
+  border-radius: 290%;
+  transform: rotate(89deg);
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 279px;
+  margin: 0 auto 10px auto;
+  text-align: center;
+}
+header p {
+  font-family: "peyda";
+  font-weight: 100;
+}
+main {
+  max-width: 500px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(66px);
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  border-radius: 10px;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 1px 10px #262626;
+}
+.input {
+  height: 50px;
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-0d1326);
+  color: var(--color-fff);
+}
+.input::placeholder {
+  font-family: "peyda";
+  color: var(--color-border);
+}
+
+.input:active {
+  outline: none;
+  border: 2px solid var(--color-fff);
+}
+.form_title {
+  /* border: 1px solid var(--color-fff); */
+  padding: 10px;
+  border-radius: 10px;
+}
+.form_button {
+  box-shadow: 0 1px 10px blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 7px 10px;
+  border-radius: 10px;
+  background-color: var(--color-button);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  font-family: "peyda";
+  transition: all 300ms;
+  gap: 10px;
+}
+.main_guide::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: var(--color-border);
+  width: 150px;
+  top: 50%;
+  height: 2px;
+  right: 55px;
+}
+.main_guide::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: var(--color-border);
+  width: 150px;
+  top: 50%;
+  height: 2px;
+  left: 55px;
+}
+.main_guide {
+  position: relative;
+}
+
+.guide_boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 50px;
+}
+.guide_box_style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  padding: 5px 30px;
+  border-radius: 10px;
+}
+.guide_box_up svg {
+  background-color: rgb(231, 79, 79);
+  border-radius: 100%;
+  border: 1px solid red;
+}
+.guide_box_down svg {
+  background-color: rgb(66, 152, 66);
+  border-radius: 100%;
+  border: 1px solid green;
+}
+.guide_box_ok svg {
+  background-color: rgb(208, 208, 110);
+  border-radius: 100%;
+  border: 1px solid yellow;
+}
+.form_button span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form_button:hover {
+  transform: translateX(10px);
+}
+.guide_box_style span {
+  font-family: "peyda";
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+main > div {
+  width: 100%;
+}
+.core_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/*  */
+.status_cart {
+  background-color: #fff;
+}
+.background {
+  background-color: red;
+}
+.btn_primary {
+  color: #fff;
+  font-family: "peyda";
+  transition: transform 300ms;
+  cursor: pointer;
+  padding: 20px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: none;
+  background: gray;
+  border-radius: 10px;
+  background-color: rebeccapurple;
+  transition: all 300ms;
+  box-shadow: 0 1px 10px rebeccapurple;
+}
+.btn:hover {
+  transform: translateX(10px);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 7px 10px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  font-family: "peyda";
+  transition: all 300ms;
+  gap: 10px;
+}
+
+@media (max-width: 680px) {
+  .bg_move_2 {
+    width: 150px;
+    height: 159px;
+  }
+  .bg_move_1 {
+    width: 150px;
+    height: 150px;
+    top: 567px;
+    right: 470px;
+  }
+}
+
+@media (max-width: 610px) {
+  .bg_move_2 {
+    width: 150px;
+    height: 159px;
+    top: 217px;
+    right: 230px;
+  }
+  .bg_move_1 {
+    width: 150px;
+    height: 150px;
+    top: 467px;
+    right: 220px;
+  }
+}
