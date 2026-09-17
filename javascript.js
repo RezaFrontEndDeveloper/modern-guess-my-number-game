@@ -29,6 +29,7 @@ uiButton.addEventListener("click", function () {
     guessNumber.textContent = score;
     upBox.classList.add("active_box");
     downBox.classList.remove("active_box");
+    okBox.classList.remove("active_box_ok");
   }
 
   if (number < Number(clientValue.value)) {
@@ -37,6 +38,7 @@ uiButton.addEventListener("click", function () {
     guessNumber.textContent = score;
     upBox.classList.remove("active_box");
     downBox.classList.add("active_box");
+    okBox.classList.remove("active_box_ok");
   }
 
   if (number === Number(clientValue.value)) {
@@ -57,4 +59,7 @@ resetBtn.addEventListener("click", function () {
   number = randomNumber();
   console.log("again", number);
   guessNumber.textContent = score;
+  okBox.classList.remove("active_box_ok");
+  upBox.classList.remove("active_box");
+  downBox.classList.remove("active_box");
 });
