@@ -13,6 +13,7 @@ const status1 = document.querySelector(".status");
 const guessNumber = document.querySelector(".guess_number");
 const guessRecord = document.querySelector(".guess_record");
 const resetBtn = document.querySelector(".reset");
+
 let score = 20;
 let record = 0;
 guessRecord.textContent = record;
@@ -51,6 +52,10 @@ uiButton.addEventListener("click", function () {
 
   if (number === Number(clientValue.value)) {
     status1.textContent = "درسته ";
+    status1.style.color = "green";
+    uiButton.style.backgroundColor = "green";
+    uiButton.style.color = "color";
+    uiButton.style.boxShadow = "0 1px 10px green";
     guessNumber.textContent = score;
     upBox.classList.remove("active_box");
     downBox.classList.remove("active_box");
