@@ -177,21 +177,7 @@ main {
   padding: 5px 30px;
   border-radius: 10px;
 }
-.guide_box_up svg {
-  background-color: rgb(231, 79, 79);
-  border-radius: 100%;
-  border: 1px solid red;
-}
-.guide_box_down svg {
-  background-color: rgb(66, 152, 66);
-  border-radius: 100%;
-  border: 1px solid green;
-}
-.guide_box_ok svg {
-  background-color: rgb(208, 208, 110);
-  border-radius: 100%;
-  border: 1px solid yellow;
-}
+
 .form_button span {
   display: flex;
   align-items: center;
@@ -282,4 +268,12 @@ main > div {
     top: 467px;
     right: 220px;
   }
+}
+/*  */
+
+.active_box {
+  background-color: red;
+}
+.active_box_ok {
+  background-color: green;
 }
