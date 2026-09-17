@@ -79,6 +79,10 @@ header {
   margin: 0 auto 10px auto;
   text-align: center;
 }
+header h1 {
+  font-family: "peyda";
+  font-weight: 700;
+}
 header p {
   font-family: "peyda";
   font-weight: 100;
