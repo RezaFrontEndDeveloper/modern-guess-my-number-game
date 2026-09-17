@@ -305,4 +305,14 @@ main > div {
   .bg_move_2 {
     right: 200px;
   }
+  .core_box p {
+    font-size: 0.8rem;
+  }
+  .status {
+    font-size: 0.7rem;
+    margin-top: 3px;
+  }
+  .main_guide {
+    font-size: 0.8rem;
+  }
 }

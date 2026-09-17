@@ -19,7 +19,7 @@ guessRecord.textContent = record;
 console.log(score);
 
 uiButton.addEventListener("click", function () {
-  if (!clientValue) {
+  if (!clientValue.value) {
     status1.textContent = "یک مقدار وارد کنید ";
   }
 
